@@ -1,0 +1,108 @@
+body {
+  font-family: "Open Sans";
+  font-weight: 200;
+  margin: 0; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav {
+  height: 60px;
+  background-color: #066EB3;
+  border-bottom: 3px solid #066EB3;
+  display: flex;
+  align-items: center; }
+  .nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    list-style-type: none; }
+    .nav ul li {
+      color: white;
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      padding: 0 8px;
+      height: 60px;
+      border-bottom: 5px solid #066EB3; }
+    .nav ul li:hover {
+      cursor: pointer;
+      border-bottom-color: white;
+      background-color: #0784d7; }
+
+.header {
+  height: 240px;
+  background-color: #0AA6E1;
+  display: flex; }
+  .header .left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%; }
+    .header .left .name {
+      color: white;
+      font-size: 4.0em;
+      margin-left: 22%; }
+      .header .left .name .job {
+        font-size: 0.60em; }
+  .header .right {
+    height: 100%;
+    width: 50%; }
+    .header .right img {
+      height: 100%; }
+
+.hello {
+  height: 720px;
+  display: flex; }
+  .hello .left {
+    width: 35%;
+    height: 100%;
+    border-right: 4px solid gray; }
+    .hello .left .left-side {
+      border-bottom: 2px solid black;
+      padding: 8% 0 8% 0;
+      margin: 0 10% 0 30%; }
+      .hello .left .left-side .title {
+        color: #0885b4; }
+  .hello .right {
+    width: 65%;
+    height: 100%;
+    padding: 1.4% 4%; }
+
+.footer1 {
+  height: 168px;
+  background-color: #0AA6E1;
+  padding: 0 20% 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .footer1 .link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .footer1 .link .circle {
+      background-color: #0779c5;
+      height: 80px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; }
+      .footer1 .link .circle img {
+        width: 88px; }
+  .footer1 .circle:hover {
+    cursor: pointer;
+    background-color: white; }
+
+.footer2 {
+  color: black;
+  height: 60px;
+  background-color: #066EB3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
+/*# sourceMappingURL=styles.css.map */

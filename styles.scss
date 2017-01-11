@@ -1,0 +1,133 @@
+$nav-color: #066EB3;
+$header-color: #0AA6E1;
+$header-height: 240px;
+
+body {
+    font-family: "Open Sans";
+    font-weight: 200;
+    margin: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    height: $header-height / 4;
+    background-color: $nav-color;
+    border-bottom: 3px solid $nav-color;
+    display: flex;
+    align-items: center;
+    ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        list-style-type: none;
+        li {
+            color: white;
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            padding: 0 8px;
+            height: $header-height / 4;
+            border-bottom: 5px solid $nav-color;
+        }
+        li:hover {
+            cursor: pointer;
+            border-bottom-color: white;
+            background-color: 1.2 * $nav-color;
+        }
+    }
+}
+
+.header {
+    height: $header-height;
+    background-color: $header-color;
+    display: flex;
+    .left {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 50%;
+        .name {
+            color: white;
+            font-size: 4.0em;
+            margin-left: 22%;
+            .job {
+                font-size: 0.60em;
+            }
+        }
+    }
+    .right {
+        height: 100%;
+        width: 50%;
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.hello {
+    height: 3 * $header-height;
+    display: flex;
+    .left {
+        width: 35%;
+        height: 100%;
+        border-right: 4px solid gray;
+        .left-side {
+            border-bottom: 2px solid black;
+            padding: 8% 0 8% 0;
+            margin: 0 10% 0 30%;
+            .title {
+                color: 0.8 * $header-color;
+            }
+        }
+    }
+    .right {
+        width: 65%;
+        height: 100%;
+        padding: 1.4% 4%;
+    }
+}
+
+.footer1 {
+    height: 0.7 * $header-height;
+    background-color: $header-color;
+    padding: 0 20% 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .circle {
+            background-color: 1.1 * $nav-color;
+            height: 80px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            img {
+            width: 88px;
+            }
+        }
+    }
+    .circle:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+}
+
+.footer2 {
+    color: black;
+    height: 0.25 * $header-height;
+    background-color: $nav-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
