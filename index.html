@@ -9,12 +9,13 @@
 </head>
 
 <body>
+    <div id="result"></div>
     <div class="container">
         <div class="nav">
             <ul>
-                <li>HELLO</li>
-                <li>RESUME</li>
-                <li>PORTFOLIO</li>
+                <li id="hello">HELLO</li>
+                <li id="resume">RESUME</li>
+                <li id="portfolio">PORTFOLIO</li>
             </ul>
         </div>
         <div class="header">
@@ -29,7 +30,7 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Skater_Tony_Hawk.jpg/220px-Skater_Tony_Hawk.jpg" />
             </div>
         </div>
-        <div class="hello">
+        <div id="helloDiv" class="hello">
             <div class="left">
                 <div class="left-side">
                     <span class="title">To</span><br />
@@ -71,6 +72,12 @@
             <!-- end of right -->
         </div>
         <!-- end of hello -->
+        <div id="resumeDiv" class="resume">
+            <h1>this is the resume panel</h1>
+        </div>
+        <div id="portfolioDiv" class="portfolio">
+            <h1>this right here is my portfolio</h1>
+        </div>
         <div class="footer1">
             <div class="link">
                 <div class="circle">
@@ -98,5 +105,7 @@
     </div>
     <!-- end of container -->
 </body>
+
+<script src="index.js"></script>
 
 </html>

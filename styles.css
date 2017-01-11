@@ -71,6 +71,14 @@ body {
     height: 100%;
     padding: 1.4% 4%; }
 
+.resume {
+  height: 720px;
+  display: none; }
+
+.portfolio {
+  height: 720px;
+  display: none; }
+
 .footer1 {
   height: 168px;
   background-color: #0AA6E1;

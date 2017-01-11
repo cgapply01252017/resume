@@ -92,6 +92,16 @@ body {
     }
 }
 
+.resume {
+    height: 3 * $header-height;
+    display: none;
+}
+
+.portfolio {
+    height: 3 * $header-height;
+    display: none;
+}
+
 .footer1 {
     height: 0.7 * $header-height;
     background-color: $header-color;
