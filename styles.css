@@ -1,12 +1,27 @@
+.circles {
+  display: flex;
+  justify-content: space-around; }
+  .circles .circle-stats {
+    display: block;
+    text-align: center; }
+    .circles .circle-stats .circle {
+      transform: rotate(-90deg); }
+      .circles .circle-stats .circle .inner1 {
+        stroke: lightgray;
+        stroke-width: 7px;
+        fill: white; }
+      .circles .circle-stats .circle .inner2 {
+        stroke: #0AA6E1;
+        stroke-width: 7px;
+        fill: none; }
+
 body {
   font-family: "Open Sans";
   font-weight: 200;
   margin: 0; }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.title {
+  color: #0885b4; }
 
 .nav {
   height: 60px;
@@ -53,30 +68,45 @@ body {
     .header .right img {
       height: 100%; }
 
-.hello {
-  height: 720px;
+.page {
+  height: 960px;
   display: flex; }
-  .hello .left {
+  .page .left {
     width: 35%;
     height: 100%;
-    border-right: 4px solid gray; }
-    .hello .left .left-side {
+    border-right: 4px solid gray;
+    padding: 40px; }
+    .page .left .left-side {
       border-bottom: 2px solid black;
       padding: 8% 0 8% 0;
-      margin: 0 10% 0 30%; }
-      .hello .left .left-side .title {
-        color: #0885b4; }
-  .hello .right {
+      margin: 0 10% 0 30%;
+      display: block; }
+      .page .left .left-side .personal td, .page .left .left-side .personal th {
+        text-align: left;
+        padding: 0 25px 12px 0; }
+      .page .left .left-side .stats td, .page .left .left-side .stats th {
+        text-align: left;
+        padding: 0 25px 12px 0; }
+      .page .left .left-side .stats td {
+        height: 50%;
+        padding: 0;
+        margin: 0;
+        width: 100%; }
+        .page .left .left-side .stats td .statsbar {
+          width: 100%;
+          height: 10px;
+          background-color: lightgray; }
+          .page .left .left-side .stats td .statsbar .statsbar {
+            background-color: #0AA6E1; }
+  .page .right {
     width: 65%;
     height: 100%;
-    padding: 1.4% 4%; }
+    padding: 40px; }
 
-.resume {
-  height: 720px;
+#resumeDiv {
   display: none; }
 
-.portfolio {
-  height: 720px;
+#portfolioDiv {
   display: none; }
 
 .footer1 {
@@ -103,7 +133,7 @@ body {
         width: 88px; }
   .footer1 .circle:hover {
     cursor: pointer;
-    background-color: white; }
+    background-color: lightgray; }
 
 .footer2 {
   color: black;

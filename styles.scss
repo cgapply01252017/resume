@@ -1,6 +1,32 @@
 $nav-color: #066EB3;
 $header-color: #0AA6E1;
 $header-height: 240px;
+$page-height: 4 * $header-height;
+
+.circles {
+    display: flex;
+    justify-content: space-around;
+    .circle-stats {
+        display: block;
+        text-align: center;
+        $circle-radius: 40px;
+        $stroke-width: 7px;
+        $stroke-length: 2 * 3.14159 * $circle-radius;
+        .circle {
+            transform: rotate(-90deg);
+            .inner1 {
+                stroke: lightgray;
+                stroke-width: $stroke-width;
+                fill: white;
+            }
+            .inner2 {
+                stroke: $header-color;
+                stroke-width: $stroke-width;
+                fill: none;
+            }
+        }
+    }
+}
 
 body {
     font-family: "Open Sans";
@@ -8,14 +34,13 @@ body {
     margin: 0;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.title {
+    color: 0.8 * $header-color;
 }
 
 .nav {
-    height: $header-height / 4;
+    height: 0.25 * $header-height;
     background-color: $nav-color;
     border-bottom: 3px solid $nav-color;
     display: flex;
@@ -69,36 +94,59 @@ body {
     }
 }
 
-.hello {
-    height: 3 * $header-height;
+.page {
+    height: $page-height;
     display: flex;
     .left {
         width: 35%;
         height: 100%;
         border-right: 4px solid gray;
+        padding: 40px;
         .left-side {
             border-bottom: 2px solid black;
             padding: 8% 0 8% 0;
             margin: 0 10% 0 30%;
-            .title {
-                color: 0.8 * $header-color;
+            display: block;
+            .personal {
+                td, th {
+                    text-align: left;
+                    padding: 0 25px 12px 0;
+                }
+            }
+            .stats {
+                td, th {
+                    text-align: left;
+                    padding: 0 25px 12px 0;
+                }
+                td {
+                    height: 50%;
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    .statsbar {
+                        width: 100%;
+                        height: 10px;
+                        background-color: lightgray;
+                        .statsbar {
+                            background-color: $header-color;
+                        }
+                    }
+                }
             }
         }
     }
     .right {
         width: 65%;
         height: 100%;
-        padding: 1.4% 4%;
+        padding: 40px;
     }
 }
 
-.resume {
-    height: 3 * $header-height;
+#resumeDiv {
     display: none;
 }
 
-.portfolio {
-    height: 3 * $header-height;
+#portfolioDiv {
     display: none;
 }
 
@@ -129,7 +177,7 @@ body {
     }
     .circle:hover {
         cursor: pointer;
-        background-color: white;
+        background-color: lightgray;
     }
 }
 
