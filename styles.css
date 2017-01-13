@@ -8,11 +8,11 @@
       transform: rotate(-90deg); }
       .circles .circle-stats .circle .inner1 {
         stroke: lightgray;
-        stroke-width: 7px;
+        stroke-width: 20px;
         fill: white; }
       .circles .circle-stats .circle .inner2 {
         stroke: #0AA6E1;
-        stroke-width: 7px;
+        stroke-width: 20px;
         fill: none; }
 
 body {
@@ -21,6 +21,7 @@ body {
   margin: 0; }
 
 .title {
+  font-size: 1.5em;
   color: #0885b4; }
 
 .nav {
@@ -69,17 +70,18 @@ body {
       height: 100%; }
 
 .page {
-  height: 960px;
+  height: 720px;
   display: flex; }
   .page .left {
     width: 35%;
     height: 100%;
     border-right: 4px solid gray;
-    padding: 40px; }
+    padding: 40px 0 40px 40px;
+    z-index: -1; }
     .page .left .left-side {
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid gray;
       padding: 8% 0 8% 0;
-      margin: 0 10% 0 30%;
+      margin: 0 10% 0 20%;
       display: block; }
       .page .left .left-side .personal td, .page .left .left-side .personal th {
         text-align: left;
@@ -102,6 +104,20 @@ body {
     width: 65%;
     height: 100%;
     padding: 40px; }
+    .page .right .education {
+      padding: 20px 0px 20px 0px; }
+      .page .right .education table {
+        width: 100%; }
+        .page .right .education table tr td {
+          padding: 5px 0 0 5px; }
+        .page .right .education table tr th {
+          padding: 12px 0 5px 0;
+          float: left; }
+        .page .right .education table tr th:nth-last-child(1) {
+          float: right; }
+        .page .right .education table tr:nth-last-child(1) td {
+          border-bottom: 2px solid gray;
+          padding: 5px 0 18px 5px; }
 
 #resumeDiv {
   display: none; }
