@@ -103,9 +103,18 @@ body {
     display: flex;
     justify-content: center;
     .projects {
+        width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        .simon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                height: 1.3 * $header-height;
+            }
+        }
         .thaitutor {
             display: flex;
             flex-direction: column;

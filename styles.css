@@ -77,9 +77,16 @@ body {
   display: flex;
   justify-content: center; }
   .page .projects {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; }
+    .page .projects .simon {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .page .projects .simon img {
+        height: 312px; }
     .page .projects .thaitutor {
       display: flex;
       flex-direction: column;
