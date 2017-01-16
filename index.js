@@ -1,4 +1,5 @@
 var circle_od = window.innerWidth > 500 ? 70 : 45;
+circle_od = 45;
 var stroke_length = Math.ceil(2 * 3.14159 * 0.8 * circle_od);
 var ratings = [0.9, 0.6, 0.2, 1, 0.6];
 var ratings = [["React", 0.9], ["JQuery", 0.9], ["Bootstrap", 0.9], ["ES6", 0.8], ["MySQL", 0.6]];

@@ -15,7 +15,7 @@
             <ul>
                 <li id="hello">HELLO</li>
                 <li id="resume">RESUME</li>
-                <li id="portfolio">PORTFOLIO</li>
+                <li id="portfolio">MY PROJECT</li>
             </ul>
         </div>
         <div class="header">
@@ -50,7 +50,7 @@
 </div>
 <!-- end of left -->
 <div class="right">
-    Dear Tony Hawk,
+    <span class="title">Dear Tony Hawk,</span>
     <br /><br /> [32] Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
     totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
     Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos,
@@ -188,14 +188,42 @@
 
 <div id="portfolioDiv" class="page">
     <div class="projects">
-        <div class="thaitutor">
-            <a href="#" target="_blank"><img src="thaitutor.jpg" /></a>
-            <div class="button">
-                <div></div>
+        <div class="iphoneContainer">
+            <div class="iphone">
+                <a href="#" target="_blank"><img src="thaitutor.jpg" /></a>
+                <div class="button">
+                    <div></div>
+                </div>
             </div>
         </div>
-        <div class="simon">
-            <a href="#" target="_blank"><img src="simon.png" /></a>
+        <div class="description">
+            <p>
+                Thai Tutor has been my primary web application project during the past month. Noticing the absence of a free and modern learning
+                platform for the Thai language (Duolingo and LiveMocha do not currently provide support), I began the project
+                with the idea that I could improve my coding while providing something truly useful to the world at the same
+                time. In addition to basic HTML/CSS/Javascript I implemented the ReactJS framework for its practical component
+                based approach and Bootstrap for its flexibility and ease of use. With future growth in mind I leveraged
+                React to make my code object-oriented and reusable and used Git to track my work and control revisions. As
+                of January 16, 2017 I am proud to say that Thai Tutor provides value to its users with the following accomplishments:
+            </p>
+            <ul>
+                <li>Teaches Thai with audio, writing, and also English based phonetics</li>
+                <li>Provides powerful options menu which allows the learning to focus their learning on their desired subject
+                    and format</li>
+                <li>Auto generates Thai numbers without need of any external API (fast and inexpensive)</li>
+                <li>Responsive design gives both mobile and desktop users and attractive UI</li>
+            </ul>
+            <p>
+                Currently Thai Tutor runs as a solely client side single page application loading material from a JSON file but I am currently
+                looking into creating a back end to provide the following:
+            </p>
+            <ul>
+                <li>User profiles and logins</li>
+                <li>Database containing user statistics</li>
+                <li>Potentially a connection to Google’s text to speech API, which is currently not officially supported. Google’s
+                    supported Speech Synthesis API does not currently support Thai. Please click here to see my Thai Tutor
+                    repository</li>
+            </ul>
         </div>
     </div>
 </div>
