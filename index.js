@@ -2,7 +2,7 @@ var circle_od = window.innerWidth > 500 ? 70 : 45;
 //circle_od = 45;
 var stroke_length = Math.ceil(2 * 3.14159 * 0.8 * circle_od);
 var ratings = [0.9, 0.6, 0.2, 1, 0.6];
-var ratings = [["React", 0.8], ["ES6", 0.9], ["CSS (SCSS)", 0.8], ["Git", 0.7]];
+var ratings = [["React", 0.85], ["ES6", 0.9], ["CSS (SCSS)", 0.8], ["Git", 0.7]];
 for (var i = 0; i < ratings.length; i++) {
     document.getElementById("circles").innerHTML += '<div class="circle-stats"><svg class="circle"><circle cx="50px" cy="50px" r="40" class="inner1" /><circle cx="50px" cy="50px" r="40" class="inner2" /></svg>' + ratings[i][0] + '</div>';
 }
