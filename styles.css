@@ -74,15 +74,18 @@ body {
     .header .right img {
       height: 100%; }
 
+#timeline {
+  margin: 10px 0 10px 0; }
+
 .page {
-  height: 720px;
+  height: 912px;
   display: flex;
   justify-content: center; }
   .page .projects {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: flex-start; }
     .page .projects .description {
       width: 60%;
       padding: 40px; }
@@ -91,7 +94,8 @@ body {
     .page .projects .iphoneContainer {
       width: 40%;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      padding-top: 50px; }
       .page .projects .iphoneContainer .iphone {
         display: flex;
         flex-direction: column;
@@ -100,17 +104,17 @@ body {
         border: 3px solid black;
         border-radius: 20px;
         padding: 20px 4px 4px 4px;
-        height: 672px;
-        width: 326.4px;
+        height: 684px;
+        width: 324.17062px;
         background-color: #191919; }
         .page .projects .iphoneContainer .iphone img {
-          margin-top: 25px;
-          height: 552px;
+          margin-top: 56.772px;
+          height: 533.52px;
           border: 1px solid black;
           border-radius: 3px; }
         .page .projects .iphoneContainer .iphone .button {
-          height: 50px;
-          width: 50px;
+          height: 60.192px;
+          width: 60.192px;
           border: 1px solid lightgray;
           border-radius: 50%;
           margin-bottom: 10px;
@@ -118,8 +122,8 @@ body {
           justify-content: center;
           align-items: center; }
           .page .projects .iphoneContainer .iphone .button div {
-            height: 17px;
-            width: 17px;
+            height: 18.0576px;
+            width: 18.0576px;
             border: 1px solid lightgray;
             border-radius: 2px; }
   .page .left {
@@ -154,20 +158,25 @@ body {
     width: 65%;
     height: 100%;
     padding: 40px; }
-    .page .right .education {
-      padding: 20px 0px 20px 0px; }
-      .page .right .education table {
+    .page .right .timeline {
+      padding: 0px 0px 20px 0px; }
+      .page .right .timeline .border {
+        border-bottom: 2px solid gray;
+        padding: 30px 0 30px 0;
+        font-size: 1.5em;
+        color: #0885b4; }
+      .page .right .timeline table {
         width: 100%; }
-        .page .right .education table tr td {
-          padding: 5px 0 0 5px; }
-        .page .right .education table tr th {
+        .page .right .timeline table tr td {
+          padding: 5px 0 0 15px; }
+        .page .right .timeline table tr th {
           padding: 12px 0 5px 0;
           float: left; }
-        .page .right .education table tr th:nth-last-child(1) {
+        .page .right .timeline table tr th:nth-last-child(1) {
           float: right; }
-        .page .right .education table tr:nth-last-child(1) td {
+        .page .right .timeline table tr:nth-last-child(1) td {
           border-bottom: 2px solid gray;
-          padding: 5px 0 18px 5px; }
+          padding: 5px 0 18px 15px; }
 
 #resumeDiv {
   display: none; }

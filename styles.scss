@@ -1,8 +1,9 @@
 $nav-color: #066EB3;
 $header-color: #0AA6E1;
 $header-height: 240px;
-$page-height: 3 * $header-height;
+$page-height: 3.8 * $header-height;
 $box-shadow: inset 0 1px 0 hsla(0,0%,100%,.1);
+$iphone-height: 0.75 * $page-height;
 
 .circles {
     
@@ -101,6 +102,10 @@ body {
     }
 }
 
+#timeline {
+    margin: 10px 0 10px 0;
+}
+
 .page {
     height: $page-height;
     display: flex;
@@ -109,7 +114,7 @@ body {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
         .description {
             width: 60%;
             padding: 40px;
@@ -121,6 +126,7 @@ body {
             width: 40%;
             display: flex;
             justify-content: center;
+            padding-top: 50px;
             .iphone {
                 display: flex;
                 flex-direction: column;
@@ -129,18 +135,18 @@ body {
                 border: 3px solid black;
                 border-radius: 20px;
                 padding: 20px 4px 4px 4px;
-                height: 2.8 * $header-height;
-                width: 1.36 * $header-height;
+                height: $iphone-height;
+                width: $iphone-height / 2.11;
                 background-color: 0.15 * darkgray;
                 img {
-                    margin-top: 25px;
-                    height: 2.3 * $header-height;
+                    margin-top: 0.083 * $iphone-height;
+                    height: 0.78 * $iphone-height;
                     border: 1px solid black;
                     border-radius: 3px;
                 }
                 .button {
-                    height: 50px;
-                    width: 50px;
+                    height: 0.088 * $iphone-height;
+                    width:  0.088 * $iphone-height;
                     border: 1px solid lightgray;
                     border-radius: 50%;
                     margin-bottom: 10px;
@@ -148,8 +154,8 @@ body {
                     justify-content: center;
                     align-items: center;
                     div {
-                        height: 17px;
-                        width: 17px;
+                        height: 0.3 * 0.088 * $iphone-height;
+                        width: 0.3 * 0.088 * $iphone-height;
                         border: 1px solid lightgray;
                         border-radius: 2px;
                     }
@@ -200,13 +206,19 @@ body {
         width: 65%;
         height: 100%;
         padding: 40px;
-        .education {
-            padding: 20px 0px 20px 0px;
+        .timeline {
+            padding: 0px 0px 20px 0px;
+            .border {
+                border-bottom: 2px solid gray;
+                padding: 30px 0 30px 0;
+                font-size: 1.5em;
+                color: 0.8 * $header-color;
+            }
             table {
                 width: 100%;
                 tr {
                     td {
-                        padding: 5px 0 0 5px;
+                        padding: 5px 0 0 15px;
                     }
                     th {
                         padding: 12px 0 5px 0;
@@ -219,7 +231,7 @@ body {
                 tr:nth-last-child(1) {
                     td {
                         border-bottom: 2px solid gray;
-                        padding: 5px 0 18px 5px;
+                        padding: 5px 0 18px 15px;
                     }
                 }
             }
