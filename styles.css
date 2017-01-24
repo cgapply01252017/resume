@@ -154,6 +154,8 @@ body {
           background-color: lightgray; }
           .page .left .left-side .stats td .statsbar .statsbar {
             background-color: #0AA6E1; }
+    .page .left .left-side:nth-child(1) {
+      padding: 0 0 8% 0; }
   .page .right {
     width: 65%;
     height: 100%;
