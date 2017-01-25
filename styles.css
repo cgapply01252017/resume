@@ -182,7 +182,10 @@ body {
 
 @media (max-width: 800px) {
   .page {
-    height: 1012px !important; } }
+    height: 1012px !important; }
+
+  body {
+    color: red; } }
 #resumeDiv {
   display: none; }
 

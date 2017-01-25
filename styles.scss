@@ -245,6 +245,9 @@ body {
     .page {
         height: $page-height + 100px !important;
     }
+    body {
+        color: red;
+    }
 }
 
 #resumeDiv {
