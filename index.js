@@ -15,7 +15,7 @@ else if(screen.width > 400) {
     for(let i=0; i<pages.length; i++) { pages[i].style.height = "1300px"; }
 }
 else {
-    for(let i=0; i<pages.length; i++) { pages[i].style.height = "1400px"; }
+    for(let i=0; i<pages.length; i++) { pages[i].style.height = "1500px"; }
 }
 
 var circle_od = window.innerWidth > 500 ? 70 : 45;
