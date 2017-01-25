@@ -241,9 +241,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .page {
-        height: $page-height + 100px;
+        height: $page-height + 100px !important;
     }
 }
 
