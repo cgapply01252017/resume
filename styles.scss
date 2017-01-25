@@ -241,6 +241,12 @@ body {
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .page {
+        height: $page-height + 100px;
+    }
+}
+
 #resumeDiv {
     display: none;
 }
