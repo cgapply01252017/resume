@@ -78,7 +78,6 @@ body {
   margin: 10px 0 10px 0; }
 
 .page {
-  height: 912px;
   display: flex;
   justify-content: center; }
   .page .projects {
@@ -95,7 +94,7 @@ body {
       width: 40%;
       display: flex;
       justify-content: center;
-      padding-top: 50px; }
+      padding: 50px 0 50px 0; }
       .page .projects .iphoneContainer .iphone {
         display: flex;
         flex-direction: column;
@@ -129,7 +128,6 @@ body {
   .page .left {
     width: 35%;
     height: 100%;
-    border-right: 4px solid gray;
     padding: 40px 0 40px 40px;
     z-index: -1; }
     .page .left .left-side {
@@ -159,7 +157,8 @@ body {
   .page .right {
     width: 65%;
     height: 100%;
-    padding: 40px; }
+    padding: 40px;
+    border-left: 4px solid gray; }
     .page .right .timeline {
       padding: 0px 0px 20px 0px; }
       .page .right .timeline .border {
@@ -180,12 +179,6 @@ body {
           border-bottom: 2px solid gray;
           padding: 5px 0 18px 15px; }
 
-@media (max-width: 800px) {
-  .page {
-    height: 1012px !important; }
-
-  body {
-    color: red; } }
 #resumeDiv {
   display: none; }
 

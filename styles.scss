@@ -106,7 +106,6 @@ body {
 }
 
 .page {
-    height: $page-height;
     display: flex;
     justify-content: center;
     .projects {
@@ -125,7 +124,7 @@ body {
             width: 40%;
             display: flex;
             justify-content: center;
-            padding-top: 50px;
+            padding: 50px 0 50px 0;
             .iphone {
                 display: flex;
                 flex-direction: column;
@@ -165,7 +164,6 @@ body {
     .left {
         width: 35%;
         height: 100%;
-        border-right: 4px solid gray;
         padding: 40px 0 40px 40px;
         z-index: -1;
         .left-side {
@@ -208,6 +206,7 @@ body {
         width: 65%;
         height: 100%;
         padding: 40px;
+        border-left: 4px solid gray;
         .timeline {
             padding: 0px 0px 20px 0px;
             .border {
@@ -238,15 +237,6 @@ body {
                 }
             }
         }
-    }
-}
-
-@media (max-width: 800px) {
-    .page {
-        height: $page-height + 100px !important;
-    }
-    body {
-        color: red;
     }
 }
 

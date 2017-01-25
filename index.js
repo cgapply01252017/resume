@@ -1,22 +1,3 @@
-console.log("width:", screen.width);
-console.log(document.getElementsByClassName("page"));
-
-let pages = document.getElementsByClassName("page");
-
-for(let i=0; i<pages.length; i++) { pages[i].style.height = "100px"; }
-
-if(screen.width > 1200) {
-    for(let i=0; i<pages.length; i++) { pages[i].style.height = "1000px"; }
-}
-else if(screen.width > 800) {
-    for(let i=0; i<pages.length; i++) { pages[i].style.height = "1200px"; }
-}
-else if(screen.width > 400) {
-    for(let i=0; i<pages.length; i++) { pages[i].style.height = "1300px"; }
-}
-else {
-    for(let i=0; i<pages.length; i++) { pages[i].style.height = "1500px"; }
-}
 
 var circle_od = window.innerWidth > 500 ? 70 : 45;
 //circle_od = 45;
