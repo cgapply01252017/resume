@@ -1,3 +1,5 @@
+console.log('this is a')
+
 
 var circle_od = window.innerWidth > 500 ? 70 : 45;
 //circle_od = 45;
