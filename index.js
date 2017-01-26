@@ -10,12 +10,13 @@ for (var i = 0; i < ratings.length; i++) {
     document.getElementById("circles").innerHTML += '<div class="circle-stats"><svg class="circle"><circle cx="50px" cy="50px" r="40" class="inner1" /><circle cx="50px" cy="50px" r="40" class="inner2" /></svg>' + ratings[i][0] + '</div>';
 }
 
+
 var circles = document.getElementsByClassName("circle-stats");
 
 for (i = 0; i < circles.length; i++) {
-    var circle = circles[i].children[0];
-    var inner1 = circle.children[0];
-    var inner2 = circle.children[1];
+    var circle = circles[i].childNodes[0];
+    var inner1 = circle.childNodes[0];
+    var inner2 = circle.childNodes[1];
 
     inner1.setAttribute("cx", circle_od);
     inner1.setAttribute("cy", circle_od);
@@ -35,7 +36,7 @@ arcs[0] = 1;
 function getCircles() {
     function getCircle(i) {
         function circle_loop() {
-            circles[i].children[0].children[1].setAttribute("stroke-dasharray", arcs[i] * stroke_length + " " + stroke_length);
+            circles[i].childNodes[0].childNodes[1].setAttribute("stroke-dasharray", arcs[i] * stroke_length + " " + stroke_length);
             setTimeout(function () {
                 arcs[i] += 0.020;
                 if (arcs[i] < ratings[i][1]) {
