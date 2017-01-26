@@ -62,10 +62,10 @@ for (var i = 0; i < links.length; i++) {
             id = links[j] + "Div";
             document.getElementById(id).style.display = "none"
         }
-        id = e.srcElement.id + "Div";
+        id = e.target.id + "Div";
         document.getElementById(id).style.display = "flex";
 
-        if(e.srcElement.id === "resume" && arcs[0] >= ratings[0][1]) {
+        if(e.target.id === "resume" && arcs[0] >= ratings[0][1]) {
             getCircles();
         }
     }
